@@ -7,7 +7,7 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   basePath: "crowdin-demo",
-  assetPrefix: basePath,
+  assetPrefix: "crowdin-demo",
   images: {
     unoptimized: true,
   },
