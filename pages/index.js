@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Sidebar from '../components/Sidebar';
 
 const samplePlaylists = [
@@ -15,9 +16,31 @@ export default function Home() {
 
   return (
     <div className="app">
+      <Head>
+        <script type="text/javascript" 
+          src="https://website-translator.app.crowdin.net/assets/proxy-translator.js"></script>
+        <script type="text/javascript" 
+          dangerouslySetInnerHTML={{ __html: `
+            console.log(window);
+            window.proxyTranslator.init({
+              baseUrl: "https://anuragces.github.io/crowdin-demo/",
+              distribution: "dec09fff75d862a5cf68adaek9q",
+              defaultLanguage: "en",
+              languageTitles: {"en": "English"},
+              showDefaultLanguageInUrl: false,
+              languageRoutingMethod: "query",
+              position: "bottom-right",
+              submenuPosition: "top-right",
+              poweredBy: true,
+              token: "dfe0fd5bc22495238330e5c8994306628408284cbf84bdc2e8853a8803645f036c0e78f35cf3be1e",
+            });
+          ` }}
+        >
+        </script>
+      </Head>
       <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      <main className="main">
+      <main className="main" class="js-proxy-blur">
         <header className="topbar">
           <div className="topbar-left">
             <button className="hamburger" onClick={() => setMenuOpen(true)} aria-label="Open menu">☰</button>
