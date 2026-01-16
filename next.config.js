@@ -6,8 +6,8 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   trailingSlash: true,
-  basePath: "crowdin-demo",
-  assetPrefix: "crowdin-demo",
+  basePath: "/crowdin-demo",
+  assetPrefix: "/crowdin-demo",
   images: {
     unoptimized: true,
   },
