@@ -32,7 +32,7 @@ export default function Home() {
               position: "bottom-right",
               submenuPosition: "top-right",
               poweredBy: true,
-              token: "dfe0fd5bc22495238330e5c8994306628408284cbf84bdc2e8853a8803645f036c0e78f35cf3be1e",
+              token: "U2FsdGVkX19fZeQjCeMsTbu8ZPhWBGOs+I1cxPkoDfTFoNhqfzR8VH9w1lBJv8Bi4+51f+JSjsdFv2ogfeoTAjqZkk4wjVmfcL+q9wKW0IoEQyTahh8Mb53zzHMGS1SnsqsiL1CsJ3xgHUgLwXj3zwxqUrIAAPXGoB7yZXvIZsk=",
             });
           ` }}
         >
